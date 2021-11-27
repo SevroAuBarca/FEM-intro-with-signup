@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=Poppins:wght@400;500;600;700&family=Red+Hat+Display:wght@500;700;900&family=Yuji+Syuku&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-red: hsl(0, 100%, 74%);
+  --primary-green: hsl(154, 59%, 51%);
+  --accent-blue: hsl(248, 32%, 49%);
+  --neutral-dark-blue: hsl(249, 10%, 26%);
+  --neutral-grayish-blue: hsl(246, 25%, 77%);
+  --white: rgb(253, 250, 250);
+  --font-poppins: "Poppins", sans-serif;
+  --input-color: hsl(246, 25%, 77%);
+}
+
+body {
+  background: url("../images/bg-intro-desktop.png");
+  background-position: center;
+  background-size: cover;
+  background-color: var(--primary-red);
+  height: 100vh;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  font-family: var(--font-poppins);
+}
+
+div {
+  width: 40%;
+  height: 75vh;
+}
+
+.content_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--white);
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.content_text h1 {
+  font-size: 2.5rem;
+  line-height: 50px;
+}
+.content_text > p {
+  font-size: 0.8rem;
+}
+
+.content_form div,
+.content_form form {
+  width: 90%;
+  border-radius: 10px;
+  box-shadow: 0px 8px 2px 1px rgba(0, 0, 0, 0.35);
+  -webkit-box-shadow: 0px 8px 2px 1px rgba(0, 0, 0, 0.35);
+  -moz-box-shadow: 0px 8px 2px 1px rgba(0, 0, 0, 0.35);
+}
+
+.content_form div {
+  height: 10%;
+  background: var(--accent-blue);
+}
+
+.content_form form {
+  height: 83%;
+  margin-top: 5%;
+  background: var(--white);
+}
+.content_form_trial {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+}
+
+.content_form_trial span {
+  font-weight: 700;
+}
+
+.content_form h4 {
+  font-weight: 400;
+}
+
+.content_form .form_contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.form_contact input:first-child {
+  margin-top: 30px;
+}
+.form_contact input {
+  width: 85%;
+  height: 8vh;
+  border-radius: 5px;
+  border: 2px solid var(--input-color);
+  font-weight: 900;
+  padding-left: 30px;
+  margin-bottom: 15px;
+}
+
+.form_contact button {
+  width: 85%;
+  height: 8vh;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 600;
+  background: var(--primary-green);
+  border: none;
+  color: var(--white);
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+.form_contact input::placeholder {
+  color: var(--neutral-dark-blue);
+}
+
+.form_contact > small {
+  font-size: 0.65rem;
+  margin-top: 15px;
+  color: var(--neutral-grayish-blue);
+}
+.form_contact > small a {
+  text-decoration: none;
+  color: var(--primary-red);
+  font-weight: 700;
+}
+
+.info {
+  border: 2px solid var(--primary-red);
+}
+.info::after {
+  content: "babdi";
+  color: var(--primary-red);
+}
+
+.info::placeholder {
+  position: absolute;
+  color: transparent !important;
+  right: 20px;
+  top: 7px;
+  height: 40px;
+  background-image: url("/images/icon-error.svg");
+  background-position: right;
+  background-repeat: no-repeat;
+  color: #fff;
+  opacity: 1;
+}
