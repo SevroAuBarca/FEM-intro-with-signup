@@ -24,7 +24,7 @@ body {
   background-color: var(--primary-red);
   height: 100vh;
   display: flex;
-
+  position: relative;
   justify-content: center;
   align-items: center;
   font-family: var(--font-poppins);
@@ -152,4 +152,12 @@ div {
   background-repeat: no-repeat;
   color: #fff;
   opacity: 1;
+}
+
+footer {
+  position: absolute;
+  align-self: center;
+  bottom: 40px;
+  font-size: 1rem;
+  right: inherit;
 }
