@@ -24,182 +24,182 @@ body {
   background-color: var(--primary-red);
   min-height: 100vh;
 
-  display: flex;
-  position: relative;
-  justify-content: center;
-  align-items: center;
-  font-family: var(--font-poppins);
+  flex-direction: column;
+  text-align: center;
 }
-
 div {
-  width: 40%;
+  width: 90%;
   height: 75vh;
 }
-
 .content_text {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: var(--white);
-  padding-left: 5%;
-  padding-right: 5%;
+  height: 60vh;
 }
 
-.content_text h1 {
-  font-size: 2.5rem;
-  line-height: 50px;
+.content_form {
+  margin-bottom: 30%;
 }
-.content_text > p {
+.content_form .content_form_trial {
+  height: 15%;
   font-size: 0.8rem;
 }
-
-.content_form div,
-.content_form form {
-  width: 90%;
-  border-radius: 10px;
-  box-shadow: 0px 8px 2px 1px rgba(0, 0, 0, 0.35);
-  -webkit-box-shadow: 0px 8px 2px 1px rgba(0, 0, 0, 0.35);
-  -moz-box-shadow: 0px 8px 2px 1px rgba(0, 0, 0, 0.35);
+.content_form_trial h4 {
+  width: 50vw;
 }
-
-.content_form div {
-  height: 10%;
-  background: var(--accent-blue);
-}
-
-.content_form_trial {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--white);
-}
-
-.content_form_trial span {
-  font-weight: 700;
-}
-
-.content_form h4 {
-  font-weight: 400;
-}
-
 .content_form .form_contact {
-  height: 83%;
-  margin-top: 5%;
-  background: var(--white);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  margin-top: 10%;
+  height: 90%;
 }
-.form_contact input:first-child {
-  margin-top: 30px;
-}
-.form_contact input {
-  width: 85%;
-  height: 8vh;
-  border-radius: 5px;
-  border: 2px solid var(--input-color);
-  font-weight: 900;
-  padding-left: 30px;
-  margin-bottom: 15px;
+.content_form .form_contact,
+.content_form .content_form_trial {
+  width: 100%;
 }
 
-.form_contact button {
-  width: 85%;
-  height: 8vh;
-  border-radius: 5px;
-  text-transform: uppercase;
-  font-size: 1rem;
-  font-weight: 600;
-  background: var(--primary-green);
-  border: none;
-  color: var(--white);
-  letter-spacing: 1px;
-  cursor: pointer;
-}
-.form_contact input::placeholder {
-  color: var(--neutral-dark-blue);
-}
-
-.form_contact > small {
-  font-size: 0.65rem;
-  margin-top: 15px;
-  color: var(--neutral-grayish-blue);
-}
-.form_contact > small a {
-  text-decoration: none;
-  color: var(--primary-red);
-  font-weight: 700;
-}
-
-.info {
-  border: 2px solid var(--primary-red);
-}
-.info::after {
-  content: "babdi";
-  color: var(--primary-red);
-}
-
-.info::placeholder {
-  position: absolute;
-  color: transparent;
-  -webkit-text-fill-color: transparent;
-  right: 20px;
-  top: 7px;
-  height: 40px;
-  background-image: url("/images/icon-error.svg");
-  background-position: right;
-  background-repeat: no-repeat;
-  color: #fff;
-  opacity: 1;
+small {
+  width: 80vw;
 }
 
 footer {
-  position: absolute;
-  align-self: center;
-  bottom: 40px;
-  font-size: 1rem;
-  right: inherit;
+  width: 80vw;
+  bottom: 0;
 }
-
-@media (max-width: 375px) {
+@media (min-width: 705px) {
   body {
-    flex-direction: column;
-    text-align: center;
+    display: flex;
+
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font-poppins);
   }
+
   div {
-    width: 90%;
+    width: 40%;
     height: 75vh;
   }
+
   .content_text {
-    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+    padding-left: 5%;
+    padding-right: 5%;
   }
 
-  .content_form {
-    margin-bottom: 30%;
+  .content_text h1 {
+    font-size: 2.5rem;
+    line-height: 50px;
   }
-  .content_form .content_form_trial {
-    height: 15%;
+  .content_text > p {
     font-size: 0.8rem;
   }
-  .content_form_trial h4 {
-    width: 50vw;
-  }
-  .content_form .form_contact {
-    margin-top: 10%;
-    height: 90%;
-  }
-  .content_form .form_contact,
-  .content_form .content_form_trial {
-    width: 100%;
+
+  .content_form div,
+  .content_form form {
+    width: 90%;
+    border-radius: 10px;
+    box-shadow: 0px 8px 2px 1px rgba(0, 0, 0, 0.35);
+    -webkit-box-shadow: 0px 8px 2px 1px rgba(0, 0, 0, 0.35);
+    -moz-box-shadow: 0px 8px 2px 1px rgba(0, 0, 0, 0.35);
   }
 
-  small {
-    width: 80vw;
+  .content_form div {
+    height: 10%;
+    background: var(--accent-blue);
+  }
+
+  .content_form_trial {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+  }
+
+  .content_form_trial span {
+    font-weight: 700;
+  }
+
+  .content_form h4 {
+    font-weight: 400;
+  }
+
+  .content_form .form_contact {
+    height: 83%;
+    margin-top: 5%;
+    background: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .form_contact input:first-child {
+    margin-top: 30px;
+  }
+  .form_contact input {
+    width: 85%;
+    height: 8vh;
+    border-radius: 5px;
+    border: 2px solid var(--input-color);
+    font-weight: 900;
+    padding-left: 30px;
+    margin-bottom: 15px;
+  }
+
+  .form_contact button {
+    width: 85%;
+    height: 8vh;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 600;
+    background: var(--primary-green);
+    border: none;
+    color: var(--white);
+    letter-spacing: 1px;
+    cursor: pointer;
+  }
+  .form_contact input::placeholder {
+    color: var(--neutral-dark-blue);
+  }
+
+  .form_contact > small {
+    font-size: 0.65rem;
+    margin-top: 15px;
+    color: var(--neutral-grayish-blue);
+  }
+  .form_contact > small a {
+    text-decoration: none;
+    color: var(--primary-red);
+    font-weight: 700;
+  }
+
+  .info {
+    border: 2px solid var(--primary-red);
+  }
+  .info::after {
+    content: "babdi";
+    color: var(--primary-red);
+  }
+
+  .info::placeholder {
+    position: absolute;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    right: 20px;
+    top: 7px;
+    height: 40px;
+    background-image: url("/images/icon-error.svg");
+    background-position: right;
+    background-repeat: no-repeat;
+    color: #fff;
+    opacity: 1;
   }
 
   footer {
-    width: 80vw;
-    bottom: 0;
+    position: absolute;
+    align-self: center;
+    bottom: 40px;
+    font-size: 1rem;
+    right: inherit;
   }
 }
